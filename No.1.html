@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>"MissionMate" </title>
+
+<style>
+body {
+	font-family: helvetica;
+	font-size: 30px;
+     } 
+
+.oben {
+ background-color: black;
+ color: green;
+ position: absolute;
+ top: 0%;
+ width: 100%;
+ height: 5%;
+     };
+
+
+
+ </style>
+
+
+</head>
+<body>
+
+
+
+<table class="oben"> 
+<th> MissionMate </th>
+<th> <button id="mission"> Mission </button>
+<div id="missionContent" style="display: none">
+<a href= ""> Your Squad </a>
+<a href= ""> Find a MissionMate </a>
+</div></th> 
+
+<th> <button id="coaching"> Coaching </button>
+<div id="coachingContent" style="display: none;">
+<a href= ""> Your coach </a>
+<a href= ""> I want to coach </a>
+</div></th>
+
+<th>
+ <button id="inspiration"> Inspiration </button> 
+ <div id="inspirationContent" style="display: none";>
+
+<a href=""> Videos </a>
+<a href=""> Blog </a>
+<a href=""> Podcast </a>
+</div> </th>
+
+</table>
+
+
+
+<script>
+var InspirationEl = document.getElementById("inspiration")
+var onInspirationClick = function() {
+
+	document.getElementById("inspirationContent").style = "visible";
+}
+InspirationEl.addEventListener("click",onInspirationClick);
+
+var CoachingEl = document.getElementById("coaching")
+var onCoachingClick = function() {
+	document.getElementById("coachingContent").style ="visible";
+}
+CoachingEl.addEventListener("click",onCoachingClick);
+
+var MissionEl = document.getElementById("mission")
+var onMissionClick = function() {
+document.getElementById("missionContent").style="visible";
+}
+MissionEl.addEventListener("click",onMissionClick);
+
+
+</script>
+
+</body>
